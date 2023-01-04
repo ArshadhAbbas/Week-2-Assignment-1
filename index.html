@@ -23,6 +23,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <script src="https://kit.fontawesome.com/61debcd8c4.js" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>  
 
     </head>
 
@@ -35,17 +36,15 @@
       </div>
       <!-- END PRELOADER -->
       <header id="header" role="banner">
-        <div class="navbar-fixed">
+        <div class="navbar-fixed" >
           <nav>
-            <div class="container">
-              <div class="nav-wrapper">
+            <div class="container" >
+              <div class="nav-wrapper" >
 
                 <!-- LOGO -->
 
                 <!-- TEXT BASED LOGO -->
-                <a href="index.html" class="brand-logo">ARSHADH</a>
-
-                <!-- Image Based Logo -->                
+                <a href="index.html" class="brand-logo">ARSHADH</a>                
                  <!-- <a href="index.html" class="brand-logo"><img src="img/logo.jpeg" alt="logo img"></a>  -->
                 <ul class="right hide-on-med-and-down custom-nav menu-scroll">
                   <li><a href="#about">About Me</a></li>
@@ -547,6 +546,11 @@ modular approach and clean code with the best coding practices.</p>
           <!-- Start Footer -->
           <footer id="footer" role="contentinfo">
             <!-- Start Footer Top -->
+            <script>
+              $(document).ready (function () {
+                $("#basic-form").validate ();
+              });
+              </script>
             <div class="footer-top">
               <div class="container">
                 <div class="row">
@@ -560,19 +564,19 @@ modular approach and clean code with the best coding practices.</p>
                             <div class="contact-form">
                               <form id="submit-form" action="" role="form">
                                 <div class="input-field">
-                                  <input type="text" class="input-box" name="contactName" id="contact-name">
+                                  <input type="text" class="input-box" name="contactName" id="contact-name" required>
                                   <label class="input-label" for="contact-name">Name</label>
                                 </div>
                                 <div class="input-field">
-                                  <input type="email" class="input-box" name="contactEmail" id="email">
+                                  <input type="email" class="input-box" name="contactEmail" id="email" required>
                                   <label class="input-label" for="email">Email</label>
                                 </div>
                                 <div class="input-field">
-                                  <input type="text" class="input-box" name="contactSubject" id="subject">
+                                  <input type="text" class="input-box" name="contactSubject" id="subject" required>
                                   <label class="input-label" for="subject">Subject</label>
                                 </div>
                                 <div class="input-field textarea-input">
-                                  <textarea class="materialize-textarea" name="contactMessage" id="textarea1"></textarea>
+                                  <textarea class="materialize-textarea" name="contactMessage" id="textarea1" required></textarea>
                                   <label class="input-label" for="textarea1">Message</label>
                                 </div>
                                 <button class="left waves-effect btn-flat brand-text submit-btn" type="submit">send message</button>

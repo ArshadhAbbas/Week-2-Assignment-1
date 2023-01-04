@@ -1,34 +1,3 @@
-/*
-Template Name: MU Material
-Author: MarkUps
-Author URI: http://www.markups.io/
-Description: MU Material - Responsive Personal Portfolio Template with Material Design
-Version: 1.0
-Tags: light, white,One page,Personal,Portfolio,Material,Flat,custom-colors,Multi Color,responsive, html5, css3
-*/
-
-
-/* Table of Content
-==================================================
-
-  #BASIC TYPOGRAPHY
-  #HOME 
-  #ABOUT SECTION
-  #RESUME SECTION
-  #PORTFOLIO SECTION
-  #FACTS SECTION
-  #TESTIMONIAL SECTION
-  #HOME BLOG  
-  #FOOTER 
-  #BLOG PAGE  
-  #RESPONSIVE CSS
-
-*/
-
-
-/*--------------------*/
-/* BASIC TYPOGRAPHY */
-/*--------------------*/
 
 h1,
 h2,
@@ -39,6 +8,11 @@ h6{
   font-family: "Roboto",sans-serif;
 }
 
+#header
+{
+  display: block;
+  float: left;
+}
 
 .custom-nav li a{
   font-family: "Roboto",sans-serif;
@@ -883,21 +857,6 @@ transition: background-color 0.5s ease-in-out;
 }
 
 
-.post-comment{
-  display: inline-block;
-  float: left;
-}
-
-
-.post-comment i {
-  display: inline-block;
-  float: left;
-  font-size: 20px;
-  line-height: 27px;
-  margin-right: 3px;
-}
-
-
 .post-comment span {
   display: inline-block;
   font-size: 16px;
@@ -998,7 +957,6 @@ transition: background-color 0.5s ease-in-out;
   left: 0;
 }
 
-
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -1074,14 +1032,6 @@ textarea.materialize-textarea {
 }
 
 
-.copyright-info {
-  color: #555;
-  display: inline-block;
-  float: right;
-  font-size: 14px;
-  line-height: 25px;  
-}
-
 
 .up-btn {
   background-color: #fff;
@@ -1125,6 +1075,7 @@ textarea.materialize-textarea {
   top: 0;
   z-index: -1;
 }
+
 
 
 .overlay-header{
@@ -1207,13 +1158,6 @@ textarea.materialize-textarea {
   height: 100%;
 }
 
-#blog-details{
-  background-color: #fafafa;
-  display: inline-block;
-  float: left;
-  min-height: 500px;
-  width: 100%;
-}
 
 
 .blog-content{  
@@ -1376,12 +1320,6 @@ textarea.materialize-textarea {
 }
 
 
-.sidebar{  
-  display: inline-block;
-  float: left;
-  min-height: 300px;
-  width: 100%;
-}
 
 
 .related-post{
