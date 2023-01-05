@@ -1967,3 +1967,12 @@ textarea.materialize-textarea {
   .pagination li {width: 25px;margin: 0 5px;}
 
 }
+.soc a{
+  font-size: 30px;
+display: inline-block;
+color: white;
+line-height: 1;
+margin: 0 8px;
+transition: 0.3s;
+padding: 14px;
+}
